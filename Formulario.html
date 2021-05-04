@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            background-color:rgb(217, 192, 224);
+        }
+        .container{
+            margin: 0 auto;
+            width: 900px;
+        }
+        input[type=text],input[type=password] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea{
+            width: 50px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+    <form autocomplete="off" action="reponse.php" method="POST" >
+        <div class="form-group">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input class="form-control"  type="text" placeholder="ex.: joão da silva" name="nomeCompleto" >
+        </div>
+        <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input class="form-control"  type="password" name="senha">
+        </div>
+
+
+        <div class="form-group">
+        <textarea class="form-control"  cols="15" rows="15" name="textos"></textarea></div>
+        <div class="form-group">
+        
+            <input class="form-control"  type="checkbox" name="escolha" value="banana" > Banana
+            <input class="form-control"  type="checkbox" name="escolha" value="maçã" > Maçã
+            <input class="form-control"  type="checkbox" name="escolha" value="pera" > Pêra
+        </div>
+
+        <input type="radio"  name="escolha2" value="Dia">Dia
+        <input type="radio"  name="escolha2" value="tarde">Tarde
+        <input type="radio"  name="escolha2" value="noite">Noite
+
+        <select name="minhalista">
+            <option value="1">Um</option>
+            <option value="2">Dois</option>
+            <option value="3">Três</option>
+        </select>
+
+        <input name="arquivo" type="file">
+
+        <input name="cor" value="#ffffff" type="color">
+        <input name="data" type="date">
+
+        <button type="submit">Enviar Formulário</button>
+        <input type="submit">enviar
+
+
+
+    </form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<html lang="pt-br">
+<head>
+    <title>Curso de Programação</title>
+    <meta name="description" content="Uma Aula de Programação">
+    <style>
+        body{
+            background-color: rgb(79, 172, 159);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h1{
+            colo:rgb(33, 173, 45);
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        #verde {
+            color:rgb(84, 129, 98);
+        }
+        .vermelho{
+            color: rgb(158, 12, 12);
+        }
+        #rodape, #pagina, #cabecalho{
+            margin:0 auto;
+            padding: 50px;
+            width: 1060px;
+            background-color: rgb(207, 204, 12);
+        }
+        #pagina p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+
+
+    </div>
+    <div id="pagina">
+        <h1 id="verde" style="font-size: 100px; color: #e21ce2;">Lorem ipsum</h1>
+        <p> 
+            <span id="texto"> Lorem ipsum doljr</span>  
+            <span id="idade">154</span>
+
+            <div>
+                <a href="javascript:somaIdade(1);"> (+) </a>
+                <a href="javascript:subIdade(1);"> (-) </a>
+            </div>
+        </p>
+        <a href="https://google.com.br" target="_blank" >Google</a>
+        <a href="link.html">Link Local</a>
+        <ul type="square">
+            <li>Açucar</li>
+            <li>Feijão</li>
+        </ul>
+        <ol type="A">
+            <li>Açucar</li>
+            <li>Feijão</li>
+        </ol>
+        <h1 class="vermelho">Novo</h1> 
+        <h1 class="vermelho">Este é um titulo</h1>
+   <hr>
+    </div>
+    <div id="rodape">
+        <h2 class="h1">Título H2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia assumenda doloremque ipsum consectetur. Alias et velit error rem! Sunt, amet eos! Ab doloremque repellendus natus ipsum asperiores nostrum dolore illo?</p>
+        <p>&copy; <small>Todos os direitos reservados.</small></p>
+    </div>
+  <script>
+    nome = "Francis Rebouças";//texto
+    idade = 41;//numero
+    temperatura = 37.5;//float 1,000.00
+    nulo = null;
+    matriz = [7,2,"maçã",4];// ["mação", "banana", "uva"]
+    objeto = {nome: "Francis", idade:41, fruta:"maçã"};
+    boleano = true; //false
+    //alert("Mensagem de alerta");
+    //confirm("Executado o alerta!");
+   
+    var elemento = document.getElementById("texto");  
+    var elementoIdade = document.getElementById("idade");  
+    //console.log(elemento);
+    elemento.innerHTML = escreveNome(nome);
+    elementoIdade.innerHTML = idade;
+
+    function somaIdade(valor){
+        return elementoIdade.innerHTML = (idade += valor);
+    }
+    function subIdade(valor){
+        return elementoIdade.innerHTML = (idade -= valor);
+    }
+    function escreveNome(value){
+        return "Nome:" +value;
+    }
+
+    //console.log("Log de ações");
+    //console.log("Monitorando")
+
+
+  </script>
+</body>
+
+</html>

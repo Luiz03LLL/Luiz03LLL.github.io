@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste de JS</title>
+        <style>
+            body{
+    background-color: rgb(230, 148, 162);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#pagina{
+    color:rgb(26, 3, 235);
+    margin:0 auto;
+    padding: 50px;
+    width: 1080px;
+    background:yellow;
+    
+}
+        </style>
+    </head>
+    <body>
+        <div id="pagina">
+        <h2>Progama de boas vindas</h2>
+        <h1 id="nome">Olá usuário seja bem vindo</h1>
+        <a href="javascript:imprimir();">Imprimir</a>
+        </div>
+
+        <script>
+            var nomeCompleto1 = "";
+var nomeCompleto2 = "";
+var inteiro = 10;
+var float = 1452.01;
+var booleano = true;//false
+var booleano = 1;//0
+var array = [1, 2, 3, 4, "Banana", "maçã"];
+var objeto = { nome: "Francis", idade: 40, cidade: "Belo Horizonte" };
+var nome = ""
+
+var h1 = document.getElementById('nome');
+h1.innerHTML = nomeCompleto1;
+
+function imprimir() {
+    return window.print();
+}
+
+        </script>
+     </body>
+    </html>

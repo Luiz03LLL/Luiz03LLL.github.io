@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        .pagina{
+            margin:0% auto;
+            width: 1080px;
+            height: 615px;
+            margin-top: 5%;
+        }
+        body{
+            background-image: url(foto2.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            
+        }
+        textarea{
+            width:400px;
+            height:200px;
+            margin:0% auto;
+            
+        }
+       label{
+           font-size: 20px;
+           color:rgb(31, 192, 85);
+       }
+       .enviar{
+           text-align:center ;
+           
+       }
+       .bolo{
+           font-size: 20px;
+           color:rgb(31, 192, 85);
+       }
+       p{
+           font-size:20px;
+           color:rgb(31, 192, 85);
+       }
+       h1{
+           text-align:center;
+           color:rgb(36, 231, 117);
+       }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="pagina">
+    <form>
+       <h1>Preencha Seus Dados</h1>
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+    <label for="data">Data  Nasc.:</label>
+    <input type="date" name="data" id="data">
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" placeholder="(xx) xxxx-xxxx">
+  </div>
+<hr>
+   <div>
+    <label for="endereço">Endereço:</label>
+    <input type="text" id="endereço">
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro">
+    <label for="estado">Estado:</label>
+
+    <select name="lista de estados" id="estado">
+       <option value="SP">São Paulo</option>
+       <option value="RJ">Rio de Janeiro</option>
+       <option value="MG">Minas Gerais</option>
+       <option value="ES">Espírito Santo</option>
+   </select>
+    
+   </div>
+<hr>
+    <div class="bolo">
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="gênero" value="masculino">Masculino
+        <input type="radio" name="gênero" value="feminino">Feminino
+    
+<hr>
+    
+        <label for="hobbies">Hobbies:</label>    
+        <input type="checkbox" name="hobbies" id="hobbie1" value="jogar futebol">Jogar Futebol
+        <input type="checkbox" name="hobbies" id="hobbie2" value="natação">Natação
+        <input type="checkbox" name="hobbies" id="hobbie3" value="jogar vôlei">Desenhar
+        <input type="checkbox" name="hobbies" id="hobbie4" value="jogar xadrez/dama">Jogar Xadrez/Dama
+        <input type="checkbox" name="hobbies" id="hobbie5" value="dançar">Dançar
+        <input type="checkbox" name="hobbies" id="hobbie6" value="cantar">Cantar
+        <input type="checkbox" name="hobbies" id="hobbie7" value="outros">Outros
+    </div>
+<hr>
+    <div>
+        <label for="arquivo">Insira Uma Foto Desejada:</label>
+        <input type="file" name="arquivo" id="arquivo">
+    </div>
+<hr>
+    <div>
+        <p>Gostaria de Deixar Uma Observação?</p><br>
+        <textarea type="form-control" name="observação" id="observacao" placeholder="Digite Aqui"></textarea>
+        
+    </div>
+    <div class="enviar">
+        <button type="submit"onclick="alert('Seu Cadastro Foi Enviado Com Suceso ☻')"><h3>Enviar Cadastro</h3></button>
+        
+    </div>
+    </div>
+
+    </form>
+  
+    
+</body> 
+</html>
