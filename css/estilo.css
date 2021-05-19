@@ -1,0 +1,66 @@
+body{
+    background-color:#F0FFFF;
+    
+}
+.pagina{
+    background-color:#F0FFFF;
+    width:1080px;
+    margin: 0 auto;
+   
+}
+.cabecalho ul li{
+margin:20px;
+padding: 40px;
+text-align:center;
+display: inline-block;
+width: 200px;
+font-size: 20px;
+
+}
+.bannerprincipal{
+    width: 960px;
+    
+}
+.ftanimes{
+    width: 315px;
+    height: 280px;
+
+}
+p{
+    font-size: 20px;
+}
+textarea{
+    width:400px;
+    height:200px;
+    border-color: #000000;
+}
+form{
+    text-align: center;
+    
+}
+input{
+    border-radius: 10px;
+   
+}
+button{
+    font-size: 18px;
+    border-color: #000000;
+    
+}
+a{
+    color: #9F79EE;
+}
+label{
+    font-size:17px;
+}
+.banneranimes{
+    width: 960px;
+    height: 500px;
+}
+li{
+    font-size:20px;
+}
+
+
+
+
