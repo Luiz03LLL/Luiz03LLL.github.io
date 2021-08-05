@@ -1,0 +1,353 @@
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*menu fixo*/
+.menu-fixo{
+    position:fixed;
+    top:0;
+    z-index:999;
+    width: 100%;
+}
+/*fim do menu fixo*/
+
+/*zomm de imagem*/
+.noticias img, .noticias-criticas img{
+    object-fit: cover;
+    transition: 0.5s;
+    transform: scale(1);
+    width: 100%;
+}
+
+/*formatando menu*/
+.menu{
+    background:linear-gradient(#000,#2d2d2d);
+    height:85px;
+}
+.menu .container{
+    display:flex;
+}
+.omelete-logo{
+    width: 155px;
+    padding-top:30px;
+}
+.menu ul{
+    display:flex;
+    margin-left:70px;
+}
+.menu ul li{
+    list-style: none;
+    font-size:13px;
+    margin-left:20px;
+    margin-top:20px;
+}
+.menu ul li a{
+    text-decoration:none;
+    color:#FFF;
+    border-bottom:2px solid #ffbf00;
+    padding-bottom:5px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.menu ul li a:hover{
+    color:#ffbf00;
+}
+.menu .redes-sociais li a{
+    border:none;
+    color:#a5a5a5;
+    font-size:20px;
+}
+.separador{
+    border-left:1px solid #a5a5a5;
+}
+.lupa{
+    color:#fff;
+}
+.lupa:hover{
+    color:#ffbf00;
+}
+/*fim da formatação do menu*/
+
+
+/*formatando as 9 imagens redondas*/
+.fundo-amarelo{
+    width: 100%;
+    background-color: #ffbf00;
+    height: 60px;
+}
+.fundo-amarelo .container{
+    display:flex;
+}
+.imagens-redondas{
+    
+    padding-left: 20px;
+    width: 9%;
+}
+.imagens-redondas span{
+    background-color: #fff;
+    color:#ffbf00;
+    width: 90px;
+    height: 80px;
+    display:block;
+    text-align: center;
+    font-size:50px;
+    padding-top:10px;
+}
+.imagens-redondas img, .imagens-redondas span{
+    border-radius:50px;
+    border:5px solid #ffbf00;
+    cursor:pointer;
+
+    
+}
+.imagens-redondas img:hover{
+    border-color:#d8a305;
+    transition:all 0.3s;
+}
+.imagens-redondas p{
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+/*fim da formatação das 9 imagens*/
+
+/*formatando noticias*/
+.noticias{
+    margin-top:170px;
+    border-top:1px solid #ccc;
+}
+.noticias .imagem{
+    overflow: hidden;
+    width: 95%;
+}
+.noticias-criticas .imagem{
+    overflow: hidden;
+}
+.noticias a{
+    text-decoration:none;
+    color:#000;
+}
+.noticias a:hover img{
+    transform:scale(1.2)
+}
+.noticias .container{
+    display:flex;
+    
+}
+.noticias-esquerda{
+    width: 25%;
+    padding-top:20px;
+    border-right: 1px solid #ccc;
+    
+}
+.noticias-central{
+    width: 40%;
+    padding-top:20px;
+    margin-left:30px;
+    margin-right:20px;
+    border-right:1px solid #ccc;
+    
+}
+.noticias ul {
+    list-style:none;
+}
+.noticias ul li::before{
+    content:"";
+    color:#ffbf00;
+    display: inline-block;
+    border:1px solid #ffbf00;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: #ffbf00;
+}
+.noticias-direita{
+    width: 25%;
+    padding-top:20px;
+}
+.the-rock{
+    width:275px;
+    border-radius:3px;
+}
+.viuva-negra{
+    width: 400px;
+    border-radius:8px;
+}
+
+.bateria{
+    width: 275px;
+    border-radius:3px;
+}
+.h2-42px{
+    font-size: 42px;
+    cursor:pointer;
+}
+.h2-30px{
+    font-size:30px;
+    cursor:pointer;
+}
+.h2-24px{
+    font-size: 24px;
+    cursor:pointer;
+}
+h3{
+    color:#888888;
+    font-size:24px;
+}
+.noticias-central ul li{
+    font-size:15px;
+    margin-top:10px;
+}
+.fogo{
+    display: inline-block;
+    padding-top:50px;
+}
+.incendio{
+    width:175px;
+    height: 175px;
+}
+.noticia-fogo{
+    display: inline-block;
+    padding-left:20px;
+}
+.noticia-fogo p{
+    background-color:#ffbf00;
+    border-right:8px solid #FF5500;
+    padding:3px 5px;
+    border-radius:4px;
+}
+.mcu{
+    background-color:#ffbf00;
+    border-right:8px solid #FF5500;
+    border-radius:4px;
+    width: 50px;
+    padding-left:5px;
+    margin:0;
+}
+.filmes{
+    background-color:#ffbf00;
+    border-right:8px solid #FF5500;
+    padding:3px 5px;
+    border-radius:4px;
+    width: 52px;
+}
+.hospitalizado{
+    background-color:#ffbf00;
+    border-right:8px solid #d7171f;
+    padding:3px 5px;
+    border-radius:4px;
+    width: 220px;
+}
+.noticias-esquerda ul li{
+    margin-top:10px;
+}
+.dublador{
+    background-color:#ffbf00;
+    border-right:8px solid #7ed321;
+    padding:3px 5px;
+    border-radius:4px;
+    width: 280px;
+}
+.dc{
+    background-color:#ffbf00;
+    border-right:8px solid #FF5500;
+    border-radius:4px;
+    width: 30px;
+    padding-left:5px;
+    margin:0;
+}
+.noticias-direita ul li{
+    margin-top: 10px;
+}
+.falcao{
+    width:275px;
+}
+.series{
+    background-color:#ffbf00;
+    border-right:8px solid #7ed321;
+    padding:3px 5px;
+    border-radius:4px;
+    width:57px;
+    margin:0;
+}
+ .noticias-direita h2:hover{
+    color:#ffbf00;
+}
+.noticias-direita ul li:hover{
+    color:#ffbf00;
+    cursor:pointer;
+}
+.noticias-central h2:hover{
+    color:#ffbf00;
+}
+.noticias-central ul li:hover{
+    color:#ffbf00;
+    cursor:pointer;
+}
+.noticias-esquerda h2:hover{
+    color:#ffbf00;
+}
+.noticias-esquerda ul li:hover{
+    color:#ffbf00;
+    cursor:pointer;
+}
+/*fim da formatação das noticias*/
+
+
+/*formatando criticas*/
+.criticas{
+    background-color: #000;
+    height: 435px;
+    width: 100%;
+}
+.criticas h2{
+    color:#ffbf00;
+    padding:10px 15px;
+}
+.em-flex{
+    display: flex;
+}
+.noticias-criticas{
+    width: 10%;
+    margin-left: 20px;
+}
+.noticias-criticas img{
+    width: 100%;
+}
+.noticias-criticas img:hover{
+    border:1px solid #ffbf00;
+    cursor:pointer;
+    transform:scale(1.2)
+}
+.noticias-criticas p{
+    color:#989898;
+    text-align: center;
+}
+.noticias-criticas span{
+    border:1px solid #989898;
+    color:#989898;
+    width: 128px;
+    height: 144px;
+    display:block;
+    text-align: center;
+    font-size:13px;
+    padding-top:50px;
+    margin-left: 20px;
+}
+.noticias-criticas span i{
+    font-size:50px;
+} 
+.noticias-criticas span:hover{
+    color:#ffbf00;
+    border-color:#ffbf00;
+    cursor:pointer;
+    
+}
